@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+input,
+select,
+button {
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #007bff;
+  color: #e8e2e2;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0069d9;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.flight-card {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.flight-logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.flight-details {
+  flex: 1;
+}
+
+.flight-name {
+  margin: 0;
+}
+
+.flight-route {
+  margin: 5px 0;
+}
+
+.flight-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flight-time,
+.flight-price {
+  margin: 0;
+}
+
+.flight-location {
+  display: flex;
+  flex-direction: column;
+}
+
+.location {
+  margin: 0;
+}
+
+.location a {
+  text-decoration: none;
+  color: #007bff;
+  margin-top: 5px;
+}
+
+.booking-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.booking-button:hover {
+  background-color: #0069d9;
+}
