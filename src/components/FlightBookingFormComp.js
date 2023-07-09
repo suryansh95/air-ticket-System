@@ -47,7 +47,8 @@ export const FlightBookingFormComp = () => {
         logo: "https://imgak.mmtcdn.com/flights/assets/media/dt/common/icons/6E.png?v=15",
         stops: 0,
         timeTaken: "5h 30m",
-        price: '4500'
+        price: '4500',
+        rating: "4.5/5"
       },
       {
         id: 2,
@@ -58,7 +59,8 @@ export const FlightBookingFormComp = () => {
         logo: "https://imgak.mmtcdn.com/flights/assets/media/dt/common/icons/6E.png?v=15",
         stops: 1,
         timeTaken: "2h 15m",
-        price: '4500'
+        price: '4500',
+        rating: '4.5/5'
       },
       {
         id: 3,
@@ -69,7 +71,8 @@ export const FlightBookingFormComp = () => {
         logo: "https://imgak.mmtcdn.com/flights/assets/media/dt/common/icons/6E.png?v=15",
         stops: 2,
         timeTaken: "3h 45m",
-        price: '4500'
+        price: '4500',
+        rating: '4.5/5'
       },
       {
         id: 4,
@@ -80,7 +83,8 @@ export const FlightBookingFormComp = () => {
         logo: "https://imgak.mmtcdn.com/flights/assets/media/dt/common/icons/6E.png?v=15",
         stops: 2,
         timeTaken: "3h 45m",
-        price: '4500'
+        price: '4500',
+        rating: '4.5/5'
       },
       {
         id: 5,
@@ -91,7 +95,8 @@ export const FlightBookingFormComp = () => {
         logo: "https://imgak.mmtcdn.com/flights/assets/media/dt/common/icons/6E.png?v=15",
         stops: 2,
         timeTaken: "3h 45m",
-        price: '4500'
+        price: '4500',
+        rating: '4.5/5'
       },
       {
         id: 6,
@@ -102,7 +107,8 @@ export const FlightBookingFormComp = () => {
         logo: "https://imgak.mmtcdn.com/flights/assets/media/dt/common/icons/6E.png?v=15",
         stops: 2,
         timeTaken: "3h 45m",
-        price: '4500'
+        price: '4500',
+        rating: '4.5/5'
       },
       {
         id: 7,
@@ -113,7 +119,8 @@ export const FlightBookingFormComp = () => {
         logo: "https://imgak.mmtcdn.com/flights/assets/media/dt/common/icons/6E.png?v=15",
         stops: 2,
         timeTaken: "3h 45m",
-        price: '4500'
+        price: '4500',
+        rating: '4.5/5'
       },
       {
         id: 8,
@@ -124,7 +131,8 @@ export const FlightBookingFormComp = () => {
         logo: "https://imgak.mmtcdn.com/flights/assets/media/dt/common/icons/6E.png?v=15",
         stops: 1,
         timeTaken: "2h 15m",
-        price: '4500'
+        price: '4500',
+        rating: '4.5/5'
       },
       {
         id: 9,
@@ -135,7 +143,8 @@ export const FlightBookingFormComp = () => {
         logo: "https://imgak.mmtcdn.com/flights/assets/media/dt/common/icons/6E.png?v=15",
         stops: 1,
         timeTaken: "2h 15m",
-        price: '4500'
+        price: '4500',
+        rating: '4.5/5'
       },
       {
         id: 10,
@@ -146,7 +155,8 @@ export const FlightBookingFormComp = () => {
         logo: "https://imgak.mmtcdn.com/flights/assets/media/dt/common/icons/6E.png?v=15",
         stops: 1,
         timeTaken: "2h 15m",
-        price: '4500'
+        price: '4500',
+        rating: '4.5/5'
       },
       {
         id: 11,
@@ -157,7 +167,8 @@ export const FlightBookingFormComp = () => {
         logo: "https://imgak.mmtcdn.com/flights/assets/media/dt/common/icons/6E.png?v=15",
         stops: 1,
         timeTaken: "2h 15m",
-        price: '4500'
+        price: '4500',
+        rating: '4.5/5'
       },
       {
         id: 12,
@@ -168,7 +179,8 @@ export const FlightBookingFormComp = () => {
         logo: "https://imgak.mmtcdn.com/flights/assets/media/dt/common/icons/6E.png?v=15",
         stops: 2,
         timeTaken: "3h 45m",
-        price: '4500'
+        price: '4500',
+        rating: '4.5/5'
       },
       {
         id: 13,
@@ -179,7 +191,8 @@ export const FlightBookingFormComp = () => {
         logo: "https://imgak.mmtcdn.com/flights/assets/media/dt/common/icons/6E.png?v=15",
         stops: 2,
         timeTaken: "3h 45m",
-        price: '4500'
+        price: '4500',
+        rating: '4.5/5'
       },
       {
         id: 14,
@@ -190,7 +203,8 @@ export const FlightBookingFormComp = () => {
         logo: "https://imgak.mmtcdn.com/flights/assets/media/dt/common/icons/6E.png?v=15",
         stops: 2,
         timeTaken: "3h 45m",
-        price: '4500'
+        price: '4500',
+        rating: '4.5/5'
       },
       {
         id: 15,
@@ -201,7 +215,8 @@ export const FlightBookingFormComp = () => {
         logo: "https://imgak.mmtcdn.com/flights/assets/media/dt/common/icons/6E.png?v=15",
         stops: 2,
         timeTaken: "3h 45m",
-        price: '4500'
+        price: '4500',
+        rating: '4.5/5'
       },
     ];
 
@@ -320,19 +335,28 @@ export const FlightBookingFormComp = () => {
               {flights.map((flight) => (
                 <li key={flight.id}>
                   <div className="flight-card" style={myListStyling}>
+                  <div>
+                  <h3 className="flight-name"><strong>{flight.name}</strong></h3>
                     <img
                       src={flight.logo}
                       alt="Flight Logo"
                       className="flight-logo"
                     />
+
+                  </div>
                     <div className="flight-details">
-                      <h3 className="flight-name"><strong>{flight.name}</strong></h3>
                       <p className="flight-route">
+                      <strong>
                         {flight.boardingCity} to {flight.destinationCity}
+
+                      </strong>
                       </p>
                       <div className="flight-info">
                         <p className="flight-time">
+                      
                          <strong> Travel Time:</strong> {flight.timeTaken}
+                         <br/>
+                         <strong> Rating:</strong> {flight.rating}
                         </p>
                         <div className="flight-location">
                           <p className="location"><strong>airport direction</strong> </p>
