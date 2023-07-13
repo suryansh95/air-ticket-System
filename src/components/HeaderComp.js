@@ -31,8 +31,6 @@ export const HeaderComp = () => {
             <ButtonYellowComp label={"FIND FLIGHT"} extraStyle={"flex mt-5"} />
           </div>
         </div>
-        <div className="flex">
-        </div>
       </div>
     </div>
   );
