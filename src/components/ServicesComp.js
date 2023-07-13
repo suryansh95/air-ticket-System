@@ -349,7 +349,7 @@ export const ServicesComp = () => {
           </div>
           <button
             style={{
-              margin: "20px 20px 50px",
+              margin: "20px 20px 20px",
               backgroundColor: "rgb(250 204 21)",
               color: "#fff",
               width: "130px",

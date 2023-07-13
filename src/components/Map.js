@@ -42,12 +42,12 @@ function Map({ boardingCity, destinationCity }) {
   }
 
   return isLoaded ? (
-    <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={2}>
+    <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={3}>
       {boardingCityLocation && (
         <Marker position={{ lat: boardingCityLocation.lat, lng: boardingCityLocation.lng }} />
       )}
       {destinationCityLocation && (
-        <Marker position={{ lat: destinationCityLocation.lat, lng: destinationCityLocation.lng }} />
+        <Marker  position={{ lat: destinationCityLocation.lat, lng: destinationCityLocation.lng }} />
       )}
     </GoogleMap>
   ) : (
