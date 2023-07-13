@@ -3,7 +3,7 @@ import { GoogleMap, Marker, useJsApiLoader } from '@react-google-maps/api';
 
 const containerStyle = {
   width: '100%',
-  height: '270px',
+  height: '370px',
 };
 
 function Map({ boardingCity, destinationCity }) {
@@ -42,7 +42,7 @@ function Map({ boardingCity, destinationCity }) {
   }
 
   return isLoaded ? (
-    <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={3}>
+    <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={2}>
       {boardingCityLocation && (
         <Marker position={{ lat: boardingCityLocation.lat, lng: boardingCityLocation.lng }} />
       )}

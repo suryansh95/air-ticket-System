@@ -218,6 +218,18 @@ export const FlightBookingFormComp = () => {
         price: '4500',
         rating: '4.5/5'
       },
+      {
+        id: 15,
+        boardingCity: "New York",
+        destinationCity: "Los Angeles",
+        name: 'AIR india',
+        date: "2023-07-10",
+        logo: "https://imgak.mmtcdn.com/flights/assets/media/dt/common/icons/6E.png?v=15",
+        stops: 0,
+        timeTaken: "5h 30m",
+        price: '4500',
+        rating: "4.5/5"
+      },
     ];
 
     const filteredFlights = availableFlights.filter(
@@ -278,29 +290,29 @@ export const FlightBookingFormComp = () => {
           placeholder="Boarding City"
           type="text"
           id="boardingCity"
-          value={boardingCity}
-          onChange={handleBoardingCityChange}
+          // value={boardingCity}
+          // onChange={handleBoardingCityChange}
           list="boardingCityOptions"
         />
-        <datalist id="boardingCityOptions">
+        {/* <datalist id="boardingCityOptions">
           {boardingCityOptions.map((city) => (
             <option key={city} value={city} />
           ))}
-        </datalist>
+        </datalist> */}
 
         <input
           placeholder="Destination City"
           type="text"
           id="destinationCity"
-          value={destinationCity}
-          onChange={handleDestinationCityChange}
+          // value={destinationCity}
+          // onChange={handleDestinationCityChange}
           list="destinationCityOptions"
         />
-        <datalist id="destinationCityOptions">
+        {/* <datalist id="destinationCityOptions">
           {destinationCityOptions.map((city) => (
             <option key={city} value={city} />
           ))}
-        </datalist>
+        </datalist> */}
       </div>
 
       <div style={myDateStyling}>
