@@ -1,7 +1,6 @@
 import React from "react";
 import FlayInnImage from "../assets/flyinn.jpeg";
 import { ButtonYellowComp } from "./ButtonYellowComp";
-import { FlightBookingFormComp } from "./FlightBookingFormComp";
 import { HeaderNavComp } from "./HeaderNavComp";
 
 export const HeaderComp = () => {
@@ -33,7 +32,6 @@ export const HeaderComp = () => {
           </div>
         </div>
         <div className="flex">
-          {/* <FlightBookingFormComp /> */}
         </div>
       </div>
     </div>
